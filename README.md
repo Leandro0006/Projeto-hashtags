@@ -7,7 +7,7 @@ Matrícula: 20230067840
 ## Como Compilar e Rodar o Programa
 1. Ter um compilador C++ instalado (ex: g++).
 2. Compile os arquivos:
-   g++ main.cpp Concessionaria.cpp Veiculo.cpp Automovel.cpp Moto.cpp Caminhao.cpp Propriedade.cpp -o concessionaria
+   g++ -std=c++17 -Wall -O2 hashtag_suggester.cpp -o hashtag_suggester
 3. Execute o programa:
    ./concessionaria
 
