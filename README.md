@@ -6,21 +6,34 @@ Matrícula: 20230067840
 
 ## Como Compilar e Rodar o Programa
 1. Ter um compilador C++ instalado (ex: g++).
-2. Compile os arquivos:
+2. Compilar manualmente:
    g++ -std=c++17 -Wall -O2 hashtag_suggester.cpp -o hashtag_suggester
-3. Execute o programa:
-   ./concessionaria
+3. Com Makefile:
+   ```bash
+make        # Compila o programa
+make run    # Compila e executa
+make clean  # Remove o executável
 
 ## Funcionalidades
-- Adicionar veículos (automóveis, motos, caminhões).
-- Buscar veículos por número de chassi.
-- Listar todos os veículos.
-- Aumentar o preço de todos os veículos.
-- Exportar o estoque para um arquivo de texto.
+- Leitura de hashtags a partir de um arquivo `hashtags.txt` (formato: `peso<TAB>#hashtag`);
+- Busca de hashtags com base em prefixos digitados (case-insensitive);
+- Ordenação por popularidade (peso);
+- Interface simples via terminal
 
-## Limitações
-- O programa não trata entradas inválidas.
-- Não há persistência de dados entre execuções.
+## Conceitos Aplicados
+- Programação orientada a objetos (herança, classes, abstratas);
+- Leitura e manipulação de arquivos;
+- Ordenação e filtragem de dados;
+- Interface por linha de comando;
+- Organização modular e reutilização de código.
 
-## Dificuldades Encontradas
-- Implementação da lógica de busca e adição de veículos.
+## 🛠️ Como compilar
+
+Você pode compilar o projeto manualmente ou usar o `make` (recomendado).
+
+### ✅ Com Makefile:
+
+```bash
+make        # Compila o programa
+make run    # Compila e executa
+make clean  # Remove o executável
