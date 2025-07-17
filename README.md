@@ -4,6 +4,12 @@
 Nome: Leandro Arthur Marinho Ferreira
 Matrícula: 20230067840
 
+## Descrição:
+ Leitura de um arquivo "hashtags.txt" contendo pares
+ "peso   #hashtag", armazenamento em vetor de objetos,
+ busca por prefixo e ordenação por popularidade (peso).   
+ Interface de terminal simples.
+
 ## Como Compilar e Rodar o Programa
 1. Ter um compilador C++ instalado (ex: g++).
 2. Compilar manualmente:
