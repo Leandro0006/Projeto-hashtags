@@ -9,10 +9,11 @@ Matrícula: 20230067840
 2. Compilar manualmente:
    g++ -std=c++17 -Wall -O2 hashtag_suggester.cpp -o hashtag_suggester
 3. Com Makefile:
-   ```bash
+ ```bash
 make        # Compila o programa
 make run    # Compila e executa
 make clean  # Remove o executável
+```
 
 ## Funcionalidades
 - Leitura de hashtags a partir de um arquivo `hashtags.txt` (formato: `peso<TAB>#hashtag`);
