@@ -1,18 +1,10 @@
-// ------------------------------------------------------------
-// Projeto: Assistente de Sugestão de Hashtags
-// Linguagem: C++17
-// Autor: Leandro Arthur (equipe)
-// Data: 02/07/2025
-// ------------------------------------------------------------
 // Descrição:
 //  Leitura de um arquivo "hashtags.txt" contendo pares
 //  "peso<TAB>#hashtag", armazenamento em vetor de objetos,
 //  busca por prefixo (case‑insensitive) e ordenação por
 //  popularidade (peso). Interface de terminal simples.
 // ------------------------------------------------------------
-// Compilação (exemplo):
-//  g++ -std=c++17 -Wall -O2 hashtag_suggester.cpp -o hashtag_suggester
-// ------------------------------------------------------------
+
 
 #include <algorithm>
 #include <cctype>
