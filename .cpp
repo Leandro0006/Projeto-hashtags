@@ -1,11 +1,3 @@
-// Descrição:
-//  Leitura de um arquivo "hashtags.txt" contendo pares
-//  "peso<TAB>#hashtag", armazenamento em vetor de objetos,
-//  busca por prefixo (case‑insensitive) e ordenação por
-//  popularidade (peso). Interface de terminal simples.
-// ------------------------------------------------------------
-
-
 #include <algorithm>
 #include <cctype>
 #include <fstream>
