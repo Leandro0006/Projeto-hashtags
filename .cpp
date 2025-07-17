@@ -2,23 +2,19 @@
 #include <cctype>
 #include <fstream>
 #include <iostream>
-#include <sstream>
+#include <sstream>gg
 #include <string>
 #include <vector>
 #include <memory>
 
-//-------------------------------------------------------------
 // Classe base abstrata para sugestões genéricas
-//-------------------------------------------------------------
 class Suggester {
 public:
     virtual std::vector<std::string> suggest(const std::string& prefix, std::size_t maxResults = 10) = 0;
     virtual ~Suggester() {}
 };
 
-//-------------------------------------------------------------
 // Classe que representa uma hashtag e seu peso (popularidade)
-//-------------------------------------------------------------
 class Hashtag {
     int weight;          // popularidade
     std::string tag;     // texto da hashtag (ex: "#tiktok")
@@ -38,9 +34,7 @@ public:
     }
 };
 
-//-------------------------------------------------------------
-// Classe concreta de sugestões baseada em hashtags
-//-------------------------------------------------------------
+// Classe de sugestões baseada em hashtags
 class HashtagSuggester : public Suggester {
     std::vector<Hashtag> all;
 
@@ -75,9 +69,7 @@ public:
     }
 };
 
-//-------------------------------------------------------------
 // Carrega as hashtags a partir de um arquivo texto
-//-------------------------------------------------------------
 std::vector<Hashtag> loadHashtags(const std::string& filename) {
     std::vector<Hashtag> hashtags;
     std::ifstream in(filename);
@@ -100,9 +92,7 @@ std::vector<Hashtag> loadHashtags(const std::string& filename) {
     return hashtags;
 }
 
-//-------------------------------------------------------------
 // Programa principal
-//-------------------------------------------------------------
 int main() {
     const std::string DATAFILE = "hashtags.txt";
     std::vector<Hashtag> database;
